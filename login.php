@@ -1,6 +1,6 @@
 <?php
-    require_once "Classes/ConfigSession.php";
-    require_once "Classes/loginClasses/LoginView.php";
+    require_once __DIR__ . "/Classes/ConfigSession.php";
+    require_once __DIR__ . "/Classes/loginClasses/LoginView.php";
 
     $loginView = new LoginView();
 ?>

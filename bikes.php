@@ -1,7 +1,7 @@
 <?php
-    require_once "Classes/ConfigSession.php";
-    require_once "Classes/showVehiclesClasses/ShowBikes.php";
-    require_once "Classes/showVehiclesClasses/ShowVehicleView.php";
+    require_once __DIR__ . "/Classes/ConfigSession.php";
+    require_once __DIR__ . "/Classes/showVehiclesClasses/ShowBikes.php";
+    require_once __DIR__ . "/Classes/showVehiclesClasses/ShowVehicleView.php";
     
     $session = new ConfigSession();
     $show_bikes = new ShowBikes("bikes");

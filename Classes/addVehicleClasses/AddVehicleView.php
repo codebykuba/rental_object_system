@@ -248,7 +248,7 @@ class AddVehicleView {
         $this->showButtons();
     }
 
-    public function showBikeInputs() {      //TUTAJ SKONCZYLEM HALO
+    public function showBikeInputs() {
 
         echo '<p>Wybrano typ: rower</p>';
             

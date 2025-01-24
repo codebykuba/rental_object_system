@@ -1,6 +1,6 @@
 <?php
 
-require_once (__DIR__ . "/../Dbh.php");
+require_once __DIR__ . "/../Dbh.php";
 
 abstract class Vehicle extends Dbh{
 

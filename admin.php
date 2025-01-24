@@ -1,6 +1,6 @@
 <?php
-    require_once "Classes/ConfigSession.php";
-    require_once "Classes/addVehicleClasses/AddVehicleView.php";
+    require_once __DIR__ . "/Classes/ConfigSession.php";
+    require_once __DIR__ . "/Classes/addVehicleClasses/AddVehicleView.php";
     
     $session = new ConfigSession();
     $view = new AddVehicleView();
