@@ -39,6 +39,11 @@ class Login extends Dbh {
 
     public function userLogin() {
         
+        //Rozpoczecie sesji, gdy nie jest aktywna
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
         //Wygeneruj nowe id dla zalogowanego uzytkownika
         session_regenerate_id(true);
         

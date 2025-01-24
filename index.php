@@ -38,6 +38,12 @@
     
     <?php }?>
 
+        <?php /*
+            session_start();
+            $_SESSION['test'] = 'Test Session Value';
+            echo $_SESSION['test']; */
+        ?>
+
     <?php if(isset($_SESSION["user_id"])) {?>
 
         <h3>

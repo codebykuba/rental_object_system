@@ -1,10 +1,10 @@
 <?php
 
 //Podlaczenie potrzebnych klas
-require_once "../Classes/Dbh.php";
-require_once "../Classes/Signup.php";
-require_once "../Classes/signupClasses/SignupContr.php";
-require_once "../Classes/Login.php";
+require_once __DIR__ . "/../Classes/Dbh.php";
+require_once __DIR__ . "/../Classes/Signup.php";
+require_once __DIR__ . "/../Classes/signupClasses/SignupContr.php";
+require_once __DIR__ . "/../Classes/Login.php";
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 

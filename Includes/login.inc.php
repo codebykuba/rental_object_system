@@ -1,9 +1,9 @@
 <?php
 
 //Podlaczenie potrzebnych klas
-require_once "../Classes/Dbh.php";
-require_once "../Classes/Login.php";
-require_once "../Classes/LoginClasses/LoginContr.php";
+require_once __DIR__ . "/../Classes/Dbh.php";
+require_once __DIR__ . "/../Classes/Login.php";
+require_once __DIR__ . "/../Classes/loginClasses/LoginContr.php";
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 

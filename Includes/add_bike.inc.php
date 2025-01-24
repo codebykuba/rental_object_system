@@ -1,8 +1,8 @@
 <?php
 
-require_once "../Classes/ConfigSession.php";
-require_once "../Classes/addVehicleClasses/AddVehicleContr.php";
-require_once "../Classes/AddVehicleClasses/Bike.php";
+require_once __DIR__ . "/../Classes/ConfigSession.php";
+require_once __DIR__ . "/../Classes/addVehicleClasses/AddVehicleContr.php";
+require_once __DIR__ . "/../Classes/addVehicleClasses/Bike.php";
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 

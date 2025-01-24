@@ -1,6 +1,6 @@
 <?php
 
-require_once "../Signup.php";
+require_once __DIR__ . "/../Signup.php";
 require_once __DIR__ . "/../ConfigSession.php";
 
 class SignupContr {
