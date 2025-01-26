@@ -58,7 +58,10 @@ class SignupContr {
                     "newsletter" => $this->newsletter
                 ];
 
-                header("Location: /rental_object_system/signup.php");
+                //Pobranie glownego katalogu projektu z sesji
+                $main_directory = $_SESSION["main_dir"];
+
+                header("Location: $main_directory/signup.php");
                 die();
             }
     }

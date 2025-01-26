@@ -1,7 +1,10 @@
 <?php
 
 session_start();
+
+$main_directory = $_SESSION["main_dir"];
+
 session_unset();
 session_destroy();
-header("Location: /rental_object_system/index.php");
+header("Location: $main_directory/index.php");
 die();

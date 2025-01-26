@@ -23,7 +23,11 @@ class ConfigSession {
             'httponly' => $this->httponly
         ]);
 
-        session_start();
+        //Wlaczenie sesji, jesli nie jest aktywna
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        
         $this->regenerateSessionId();
     }
 

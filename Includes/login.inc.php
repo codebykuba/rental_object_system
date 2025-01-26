@@ -2,6 +2,7 @@
 
 //Podlaczenie potrzebnych klas
 require_once __DIR__ . "/../Classes/Dbh.php";
+require_once __DIR__ . "/../Classes/ConfigSession.php";
 require_once __DIR__ . "/../Classes/Login.php";
 require_once __DIR__ . "/../Classes/loginClasses/LoginContr.php";
 
@@ -21,7 +22,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         $login_user->userLogin();
 
         //Wroc na strone glowna i zakoncz dzialanie
-        header("Location: /rental_object_system/index.php");
+        $session = new ConfigSession();
+        $main_directory = $_SESSION["main_dir"];
+
+        header("Location: $main_directory/index.php");
         die();
     } 
     catch (PDOException $e) {

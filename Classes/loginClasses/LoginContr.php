@@ -41,8 +41,11 @@ class LoginContr {
                 //Rozpoczecie sesji i pobranie danych do zmiennych sesyjnych
                 $session = new ConfigSession();
                 $_SESSION["login_errors"] = $errors;
-                
-                header("Location: /rental_object_system/login.php");
+
+                //Pobranie glownego katalogu projektu z sesji
+                $main_directory = $_SESSION["main_dir"];
+
+                header("Location: $main_directory/login.php");
                 die();
             }
     }

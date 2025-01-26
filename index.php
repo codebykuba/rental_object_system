@@ -2,6 +2,19 @@
     require_once __DIR__ . "/Classes/ConfigSession.php";
 
     $session = new ConfigSession();
+
+    //Umieszczenie glownej sciezki do projektu w zmiennej sesyjnej
+    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+        $protocol = "https://";
+    }
+    else {
+        $protocol = "http://";
+    }
+
+    $host = $_SERVER["HTTP_HOST"];
+    $path = dirname($_SERVER["SCRIPT_NAME"]);
+    $main_directory = rtrim($protocol . $host . $path, '/');
+    $_SESSION["main_dir"] = $main_directory;
 ?>
 
 <!DOCTYPE html>

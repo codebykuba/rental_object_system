@@ -31,7 +31,7 @@
             </form>
         </div>
 
-        <?php 
+        <?php
             $loginView->showErrors();
         ?>
 
