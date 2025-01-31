@@ -28,9 +28,9 @@
 
     <?php }?>
 
-    <?php if(isset($_SESSION["account_type"]) && $_SESSION["account_type"] !== 1) {?>
+    <?php if((isset($_SESSION["account_type"]) && $_SESSION["account_type"] !== 1) || !isset($_SESSION['account_type'])) {?>
 
-        <h2>Nie jestes administratorem</h2>
+        <h2>Nie jesteś administratorem.</h2>
 
     <?php }?>
 

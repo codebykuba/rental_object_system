@@ -42,6 +42,12 @@
         <a href="admin.php">Panel administratora</a>
 
     <?php }?>
+
+    <?php if(isset($_SESSION["account_type"]) && ($_SESSION["account_type"] == 0 || $_SESSION["account_type"] == 1)) {?>
+
+        <a href="user_panel/user_panel.php">Panel użytkownika</a>
+
+    <?php }?>
     
     <a href="vehicles.php">Nasza oferta<a>
 
