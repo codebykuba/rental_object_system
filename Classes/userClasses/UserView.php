@@ -42,7 +42,6 @@ class UserView {
 
     }
 
-
     public function getInfo() {
         echo $this->first_name;
         echo "<br>";
