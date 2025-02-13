@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         //Przekaz do sesji komunikat o bledzie
         $error_message = "Wybierz typ pojazdu.";
         $_SESSION["error"] = $error_message;
-        header("Location: ../admin.php");
+        header("Location: ../admin_addvehicle.php");
         die();
     }
 
