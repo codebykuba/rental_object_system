@@ -4,9 +4,9 @@ class ConfigSession {
 
     //Parametry pliku cookie
     private $lifetime = 1800;
-    private $domain = 'rental.local';
+    private $domain = 'rental.local';  //Domain musi sie zgadzac z hostem 
     private $path = '/';
-    private $secure = false;    //False ze wzgledu na http a nie https
+    private $secure = false;    //False ze wzgledu na http a nie https (Jesli to jest zle, sesje nie dzialja prawidlowo)
     private $httponly = true;
 
     public function __construct() {
