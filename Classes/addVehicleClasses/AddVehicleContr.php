@@ -140,7 +140,7 @@ class AddVehicleContr {
 
             if(!empty($this->errors)) {
                 
-                header("Location: /rental_object_system/addcar.php");
+                header("Location: ../addcar.php");
                 die();
             }
     }
