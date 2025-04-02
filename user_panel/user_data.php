@@ -27,9 +27,6 @@
             <?php
                 $view->showUserData();
                 $view->showUserFunctions();
-                
-                echo "<br><br><br>";
-                $view->getInfo();
             ?>
 
         </div>

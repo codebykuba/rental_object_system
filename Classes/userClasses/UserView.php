@@ -42,6 +42,7 @@ class UserView {
 
     }
 
+    //Metoda pomocnicza, korzystac tylko przy rozbudowie aplikacji
     public function getInfo() {
         echo $this->first_name;
         echo "<br>";

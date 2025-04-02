@@ -197,7 +197,7 @@ class AddVehicleContr {
 
             if(!empty($this->errors)) {
                 
-                header("Location: /rental_object_system/addmotorcycle.php");
+                header("Location: ../addmotorcycle.php");
                 die();
             }
     }
@@ -251,7 +251,7 @@ class AddVehicleContr {
 
             if(!empty($this->errors)) {
                 
-                header("Location: /rental_object_system/addbike.php");
+                header("Location: ../addbike.php");
                 die();
             }
     }

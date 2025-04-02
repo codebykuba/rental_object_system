@@ -40,7 +40,7 @@ class SignupContr {
         
         //4. Haslo nie spelnia wymagan (min. 8 znakow i min. 1 cyfra)
         if($this->isPasswordIncorrect() && !$this->areInputsEmpty()) {
-            $errors["incorrect_password"] = "Hasło nie spełnia wymagań.";
+            $errors["incorrect_password"] = "Hasło nie spełnia wymagań (minimum 8 liter i 1 cyfra).";
         }
 
             //Gdy bledy wystapily

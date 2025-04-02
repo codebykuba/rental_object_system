@@ -423,7 +423,7 @@ class AddVehicleView {
                 }
             }
             
-            echo "<p>Rozmiar koła: " . htmlspecialchars($this->bike_data['wheel_size']) . "</p>";
+            echo "<p>Rozmiar koła: " . htmlspecialchars($this->bike_data['wheel_size']) . '"</p>';
             echo "<p>Kolor roweru: " . htmlspecialchars($this->bike_data['color']) . "</p>";
             echo "<p>Cena wynajmu (zł/dzień): " . htmlspecialchars($this->bike_data['price']) . "</p>";   
         
